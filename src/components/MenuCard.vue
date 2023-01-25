@@ -8,10 +8,11 @@
                 <span class="card-title" :key="menuItem.id">{{ menuItem.title }}</span>
                 <p class="truncate" :key="menuItem.id">
                     {{ menuItem.detail }}</p>
-                <a class="btn-floating right halfway-fab waves-effect waves-light  green"><i
-                        class="material-icons">+</i></a>
-                <!-- <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">+</i></a> -->
 
+                <MenuModal :menuItem="menuItem" :ingeridents="ingeridents" />
+
+                <!-- <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">+</i></a> -->
+                <!-- // v-model="showMenuModal" -->
 
             </div>
         </div>
@@ -19,11 +20,26 @@
 </template>
 
 <script>
+import MenuModal from './MenuModal.vue';
+import { query } from '../services/ingeridentService';
+
 export default {
     name: 'MenuCard',
+    components: {
+        MenuModal,
+    },
     props: {
         menuItem: Object,
     },
+    data() {
+        return {
+            ingeridents: null,
+        }
+    },
+    mounted() {
+        this.ingeridents = query(this.menuItem);
+        console.log("ix", query(this.menuItem))
+    }
 
 }
 </script>
