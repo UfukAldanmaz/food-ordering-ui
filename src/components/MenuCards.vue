@@ -2,7 +2,6 @@
     <div class="row">
 
         <MenuCard v-for="item in menu" :key="item.id" :menuItem="item" />
-
     </div>
 </template>
 
@@ -12,7 +11,6 @@ import MenuCard from '../components/MenuCard.vue'
 export default {
     name: 'MenuCards',
     components: {
-
         MenuCard
     },
     data() {
