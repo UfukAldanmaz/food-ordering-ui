@@ -1,16 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <NavbarItem />
+    <div>
+      <router-view />
+    </div>
+    <MenuCards />
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarItem from './components/NavbarItem.vue';
+import MenuCards from './components/MenuCards.vue';
+import '../node_modules/materialize-css/dist/css/materialize.min.css'
+import '../node_modules/materialize-css/dist/js/materialize.min.js'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavbarItem,
+    MenuCards
+  },
 }
 </script>
 
