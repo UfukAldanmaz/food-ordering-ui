@@ -1,6 +1,5 @@
 <template>
-    <div class="row">
-
+    <div class="row row-container">
         <MenuCard v-for="item in menu" :key="item.id" :menuItem="item" />
     </div>
 </template>
@@ -23,5 +22,14 @@ export default {
 </script>
 
 <style>
+.row-container {
+    float: left;
+    width: 80%;
+}
 
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .row-container {
+        width: 20%;
+    }
+}
 </style>
