@@ -1,5 +1,7 @@
 <template>
-    <div class="col  s12 m3 ">
+    <div class="col s12 m4 card-item-container">
+
+
         <div class="card ">
             <div class="card-image">
                 <img :key="menuItem.id" :src=menuItem.img>
@@ -44,8 +46,10 @@ export default {
 }
 </script>
 
-<style >
-/* .card-item-container {
-    height: 300px;
-} */
+<style  >
+.card-item-container {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+}
 </style>
