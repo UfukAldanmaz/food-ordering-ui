@@ -16,7 +16,6 @@ export default {
         INCREASE_ORDER(state, payload) {
             state.orders = state.orders.map(order => {
                 if (order.orderId === payload.orderId) {
-                    console.log("xxxxxxxx", order, payload)
                     order.productCount += 1;
                 }
                 return order;
@@ -25,7 +24,6 @@ export default {
         DECREASE_ORDER(state, payload) {
             state.orders = state.orders.map(order => {
                 if (order.orderId === payload.orderId) {
-                    console.log("oooooo", order)
                     order.productCount -= 1;
                 }
                 return order;
@@ -34,7 +32,6 @@ export default {
     },
     actions: {
         addToCart(context, payload) {
-            console.log("ppppp", payload)
             const orders = context.state.orders
             orders.push(payload)
             context.commit('ADD_TO_CART', orders)
