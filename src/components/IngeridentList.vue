@@ -1,5 +1,5 @@
 <template>
-    <h3>{{ ingeridentCategory?.name }}</h3>
+    <h5>{{ ingeridentCategory?.name }}</h5>
     <v-table>
         <tbody>
             <tr v-for="ingerident in ingeridents" :key="ingerident.id">
