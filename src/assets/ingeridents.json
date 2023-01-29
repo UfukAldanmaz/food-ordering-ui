@@ -1,8 +1,289 @@
 [
     {
         "id": 1,
-        "name": "turşu",
+        "categoryId": 2,
+        "name": "Маринованный огурчик",
         "price": 25,
         "img": "https://cdn.foodpicasso.com/assets/2022/07/26/3027c57c6ff755a36a23f7279b0a9630---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 2,
+        "categoryId": 2,
+        "name": "Свежий огурчик",
+        "price": 23,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/f31b632903ee3d0e6249289f618eb247---png_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 3,
+        "categoryId": 2,
+        "name": "Лучок маринованный",
+        "price": 10,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/6d1aab5de9b6f247f9afac3ee819846d---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 4,
+        "categoryId": 2,
+        "name": "Грибочки маринованные",
+        "price": 77,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/5242c27b01fd320ea21196c89f7f4e39---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 5,
+        "categoryId": 2,
+        "name": "Перчик болгарский",
+        "price": 35,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/e024751115d70ea661433d0d73c1a659---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 6,
+        "categoryId": 2,
+        "name": "Томат",
+        "price": 25,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/c7a108c28e3bb41dac5a8549386f89b5---jpeg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 7,
+        "categoryId": 2,
+        "name": "Бекон",
+        "price": 66,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/f5be1451d119eb263739e675853d89c4---jpeg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 8,
+        "categoryId": 2,
+        "name": "Оливки",
+        "price": 37,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/9e2c97a6a624aa46a29c914b8ddff5a2---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 9,
+        "categoryId": 2,
+        "name": "Сыр",
+        "price": 17,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/6ffb36fd8791beee98410f7d04fce6f5---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 10,
+        "categoryId": 2,
+        "name": "Горчица",
+        "price": 10,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/d47473bd814449044c0dcf34983c9040---png_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 11,
+        "categoryId": 2,
+        "name": "Яйцо",
+        "price": 25,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/592fe930494dd2d25e5756e72a3b0d2f---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 12,
+        "categoryId": 2,
+        "name": "Сосиска",
+        "price": 78,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/5f59c9ea34222ee24a45dd57dab89e3e---jpeg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 13,
+        "categoryId": 2,
+        "name": "Рубленый бифштекс из говядины",
+        "price": 73,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/cd8bab043d870f9b582393d1bcf8c502---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 14,
+        "categoryId": 2,
+        "name": "Куриное филе в панировке",
+        "price": 55,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/47e053e1ee0cdce8889d017874467726---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 15,
+        "categoryId": 2,
+        "name": "Лист салата",
+        "price": 10,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/89184e3f5ac28a020a528552b2675b40---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 16,
+        "categoryId": 2,
+        "name": "Фри",
+        "price": 38,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/11ac767ce3f35ee9a208a2ea1b132580---jpeg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 17,
+        "categoryId": 1,
+        "name": "Маринованный лучок",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/4fcd48fe7acb9ff3ba358d215562f8c3---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 18,
+        "categoryId": 1,
+        "name": "Горчица",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/9c74acfe562dab9859eddc026f9b4619---png_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 19,
+        "categoryId": 1,
+        "name": "Без лука",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/3027c57c6ff755a36a23f7279b0a9630---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 20,
+        "categoryId": 1,
+        "name": "Без горчицы",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/ffc79de2a3b4372f4db880060cb3713a---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 21,
+        "categoryId": 1,
+        "name": "Без горчицы и лука",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/01cfe1883bb4409a76de5c7b3e341cde---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 22,
+        "categoryId": 1,
+        "name": "Фри",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/f3018ad3bb3a188a2663898613be7193---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 23,
+        "categoryId": 3,
+        "name": "Картофель фри",
+        "price": 110,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/631587a0ccee9ed05aa0b57814fe2eaf---jpeg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 24,
+        "categoryId": 3,
+        "name": "Картофельные дольки от Папы",
+        "price": 168,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/8f6d261e746716979ef977c75dc286f6---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 25,
+        "categoryId": 3,
+        "name": "Фри",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/f3018ad3bb3a188a2663898613be7193---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 26,
+        "categoryId": 1,
+        "name": "Картофельные дольки от Папы СО СПЕЦИЯМИ",
+        "price": 168,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/0794679dc8d1d64ebefb3273af8039c8---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 27,
+        "categoryId": 4,
+        "name": "Без соуса",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/04d2913ea263586c8509e46b847afeea---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 28,
+        "categoryId": 4,
+        "name": "Томатный кетчуп",
+        "price": 26,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/601e403d7e68b5ad04e69dce1417531c---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 29,
+        "categoryId": 4,
+        "name": "Соус Чили",
+        "price": 43,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/eef4285ac6e066ab335d70dc2f5b77ee---png_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 30,
+        "categoryId": 4,
+        "name": "Тайский соус",
+        "price": 52,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/6a2e0699ef258c25dfa062aadc6c90dc---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 31,
+        "categoryId": 4,
+        "name": "Фирменный соус",
+        "price": 20,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/fc667b4ca67a4128810d147f84afde36---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 32,
+        "categoryId": 4,
+        "name": "Сырный соус",
+        "price": 44,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/715265820b430c651910f6304c86642c---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 33,
+        "categoryId": 4,
+        "name": "Барбекю по-техасски",
+        "price": 50,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/42dfc0ce7d54d72c62f16fcc95926894---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 34,
+        "categoryId": 1,
+        "name": "Мёд",
+        "price": 51,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/cc7334632c431201a6ab2b3ef4d5cf6e---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 35,
+        "categoryId": 1,
+        "name": "Мята",
+        "price": 25,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/6792db9da9c188190bd7fbaa7db1f02a---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 36,
+        "categoryId": 1,
+        "name": "Имбирь",
+        "price": 25,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/8ef1eb70e1c022fb2239660c38eae784---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 37,
+        "categoryId": 1,
+        "name": "Сироп",
+        "price": 30,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/fa28beb89089bb9eec5e708c3fd2b0c8---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 38,
+        "categoryId": 1,
+        "name": "Сахар",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/1522b355645390e5ebfe625c12e92834---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 39,
+        "categoryId": 1,
+        "name": "Лимон",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/126556a656fdaa11630e8c22b01ae89c---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 40,
+        "categoryId": 1,
+        "name": "Корица",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/c0a99c61637c3f54fe9e63a3ef02774d---jpg_160x160_b3903_convert.webp"
+    },
+    {
+        "id": 41,
+        "categoryId": 1,
+        "name": "Молоко",
+        "price": 0,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/0effb908cb2bfa03e43491695d296260---jpg_160x160_b3903_convert.webp"
     }
 ]
