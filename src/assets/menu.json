@@ -334,7 +334,7 @@
         "categoryId": 2,
         "title": "Биг Пап ",
         "detail": "Обжаренная булка разрезанная на три части. В одном бургере вы получаете двойную порцию говяжьего бифштекса, двойную порцию сыра, двойную порцию хрустящего салата, двойную порцию маринованных огурчиков, двойную порцию томатного и фирменных соусов.",
-        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/8a3b0bfe201fdd2c43a6d0650f7a52a5---jpg_100x62_73134_convert.webp",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/8a3b0bfe201fdd2c43a6d0650f7a52a5---jpg_550x342_f7e9c_convert.webp",
         "price": 233,
         "ingeridents": [
             {
@@ -601,7 +601,7 @@
         "id": 25,
         "categoryId": 9,
         "title": "Сок Добрый 0,33 ",
-        "detail": "В ассортименте.",
+        "detail": null,
         "img": "https://cdn.foodpicasso.com/assets/2022/08/12/9db1e68f8dd5a60122b41c298e1379d1---jpg_550x342_f7e9c_convert.webp",
         "price": 82,
         "ingeridents": [
