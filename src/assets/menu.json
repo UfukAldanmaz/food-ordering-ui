@@ -1,11 +1,233 @@
 [
     {
-        "id": "1",
-        "header": "В лепёшке",
+        "id": 1,
+        "categoryId": 1,
         "title": "Ролл Мамс",
         "detail": "Обжаренное куриное филе, панированное в сухарях, хрустящий салат, ломтики сочного томата и ломтик сыра в зажаренной пшеничной лепешке, заправленной фирменным соусом.",
         "img": "https://cdn.foodpicasso.com/assets/2022/06/23/7455d3947eee6951b501e3b9440cbb2c---jpg_550x342_f7e9c_convert.webp",
-        "price": "132 ₽",
+        "price": 132,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            },
+            {
+                "id": 3,
+                "selected": true
+            },
+            {
+                "id": 5,
+                "selected": false
+            },
+            {
+                "id": 6,
+                "selected": false
+            },
+            {
+                "id": 7,
+                "selected": false
+            },
+            {
+                "id": 8,
+                "selected": false
+            },
+            {
+                "id": 9,
+                "selected": false
+            },
+            {
+                "id": 10,
+                "selected": false
+            },
+            {
+                "id": 11,
+                "selected": false
+            },
+            {
+                "id": 12,
+                "selected": false
+            },
+            {
+                "id": 13,
+                "selected": false
+            },
+            {
+                "id": 14,
+                "selected": false
+            },
+            {
+                "id": 15,
+                "selected": false
+            },
+            {
+                "id": 16,
+                "selected": false
+            },
+            {
+                "id": 17,
+                "selected": false
+            },
+            {
+                "id": 18,
+                "selected": false
+            },
+            {
+                "id": 19,
+                "selected": false
+            },
+            {
+                "id": 20,
+                "selected": false
+            },
+            {
+                "id": 21,
+                "selected": false
+            },
+            {
+                "id": 22,
+                "selected": false
+            },
+            {
+                "id": 23,
+                "selected": false
+            },
+            {
+                "id": 24,
+                "selected": false
+            },
+            {
+                "id": 25,
+                "selected": false
+            },
+            {
+                "id": 26,
+                "selected": false
+            },
+            {
+                "id": 27,
+                "selected": false
+            },
+            {
+                "id": 28,
+                "selected": false
+            },
+            {
+                "id": 29,
+                "selected": false
+            },
+            {
+                "id": 30,
+                "selected": false
+            },
+            {
+                "id": 31,
+                "selected": false
+            },
+            {
+                "id": 32,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categoryId": 1,
+        "title": "Двойной ролл Мамс ",
+        "detail": "(Все в двойном размере) Обжаренное куриное филе, панированное в сухарях, хрустящий салат, ломтики сочного томата и ломтик сыра в зажаренной пшеничной лепешке, заправленной фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/18ef6d469d8b74bb4556e14087d86098---jpg_550x342_f7e9c_convert.webp",
+        "price": 207,
+        "ingeridents": [
+            {
+                "id": 17,
+                "selected": true
+            },
+            {
+                "id": 18,
+                "selected": false
+            },
+            {
+                "id": 19,
+                "selected": false
+            },
+            {
+                "id": 20,
+                "selected": false
+            },
+            {
+                "id": 21,
+                "selected": false
+            },
+            {
+                "id": 34,
+                "selected": false
+            },
+            {
+                "id": 35,
+                "selected": false
+            },
+            {
+                "id": 36,
+                "selected": false
+            },
+            {
+                "id": 37,
+                "selected": false
+            },
+            {
+                "id": 38,
+                "selected": false
+            },
+            {
+                "id": 39,
+                "selected": false
+            },
+            {
+                "id": 40,
+                "selected": false
+            },
+            {
+                "id": 41,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categoryId": 1,
+        "title": "Ролл Папс",
+        "detail": "Рубленный говяжий бифштекс со специями, ломтик сыра, хрустящий салат, ломтики сочного томата в зажаренной пшеничной лепешке, заправленной томатным соусом и фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/a8e48311a99faaad1cb5de61a096455c---jpg_550x342_f7e9c_convert.webp",
+        "price": 156,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            },
+            {
+                "id": 3,
+                "selected": false
+            },
+            {
+                "id": 4,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "categoryId": 1,
+        "title": "Двойной ролл Папс",
+        "detail": "(Все в двойном размере) Рубленный говяжий бифштекс со специями, ломтик сыра, хрустящий салат, ломтики сочного томата в зажаренной пшеничной лепешке, заправленной томатным соусом и фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/a5c477aa0713b78a8965b2c15da17db4---jpg_550x342_f7e9c_convert.webp",
+        "price": 249,
         "ingeridents": [
             {
                 "id": 1,
@@ -18,12 +240,12 @@
         ]
     },
     {
-        "id": "2",
-        "header": "",
-        "title": "Двойной ролл Мамс ",
-        "detail": "(Все в двойном размере) Обжаренное куриное филе, панированное в сухарях, хрустящий салат, ломтики сочного томата и ломтик сыра в зажаренной пшеничной лепешке, заправленной фирменным соусом.",
-        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/18ef6d469d8b74bb4556e14087d86098---jpg_550x342_f7e9c_convert.webp",
-        "price": "207 ₽",
+        "id": 5,
+        "categoryId": 1,
+        "title": "Веган ролл",
+        "detail": "Оливки, ломтики сыра сиртаки, хрустящий салат, ломтики сочного томата, свежие сочные огурчики, перчик сладкий в зажаренной пшеничной лепешке, заправленный оливковым маслом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/aa8079d12e640cf61717a390e83dc0e6---jpg_550x342_f7e9c_convert.webp",
+        "price": 189,
         "ingeridents": [
             {
                 "id": 1,
@@ -32,6 +254,374 @@
             {
                 "id": 2,
                 "selected": false
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "categoryId": 1,
+        "title": "Ролл фри",
+        "detail": "Картофель фри, хрустящий салат, ломтики сочного томата, хрустящие маринованные огурчики в зажаренной пшеничной лепешке, заправленный сырным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/b50c20d6e65e24d0940fb2e5e40d593e---jpg_550x342_f7e9c_convert.webp",
+        "price": 141,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "categoryId": 2,
+        "title": "Мамчикен",
+        "detail": "Обжаренное куриное филе, панированное в сухарях, которое подается на булочке с кунжутом, заправленной хрустящим салатом, ломтиками сочного томата, ломтиком сыра и фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/bee5e6af8851445b11760fd5b277c536---jpg_710_e7061_convert.webp",
+        "price": 141,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "categoryId": 2,
+        "title": "Чикенбургер",
+        "detail": "Обжаренное куриное филе, панированное в сухарях, которое подается на булочке с кунжутом, заправленной хрустящим салатом, хрустящим маринованным огурчиком и фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/19a7b59e845ffa490106a0c589e20b65---jpg_710_e7061_convert.webp",
+        "price": 121,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "categoryId": 2,
+        "title": "Фреш Мамс",
+        "detail": "Обжаренное куриное филе, панированное в сухарях, которое подается на булочке с кунжутом, заправленной хрустящим салатом, свежими сочными огурчиками, ломтиками сочного томата, болгарским перчиком и фирменным соусом.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/0f8d63665b3e21ad5e1d067e65e35b70---jpg_550x342_f7e9c_convert.webp",
+        "price": 137,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "categoryId": 2,
+        "title": "Биг Пап ",
+        "detail": "Обжаренная булка разрезанная на три части. В одном бургере вы получаете двойную порцию говяжьего бифштекса, двойную порцию сыра, двойную порцию хрустящего салата, двойную порцию маринованных огурчиков, двойную порцию томатного и фирменных соусов.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/21/8a3b0bfe201fdd2c43a6d0650f7a52a5---jpg_100x62_73134_convert.webp",
+        "price": 233,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "categoryId": 3,
+        "title": "Хот-дог",
+        "detail": "Сочная сосиска, зажаренный в гриле багет, маринованные огурчики, ломтики сочного томата, хрустящий салат, фирменный соус, томатный соус.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/ecec4e191865b32fbed5b8d67ccadbd8---jpg_550x342_f7e9c_convert.webp",
+        "price": 142,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "categoryId": 3,
+        "title": "Двойной хот-дог",
+        "detail": "Две сочные сосиски, зажаренный в гриле багет, маринованные огурчики, ломтики сочного томата, хрустящий салат, фирменный соус, томатный соус.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/2fa2500e22a57cfe9511c8a74e560f06---jpg_550x342_f7e9c_convert.webp",
+        "price": 204,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "categoryId": 4,
+        "title": "Чикен Папс",
+        "detail": "Куриные крылышки, панированные в сухарях, обжаренные во фритюре",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/db4632f0dbd372563eb52de8fa58cd7e---jpg_550x342_f7e9c_convert.webp",
+        "price": 223,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "categoryId": 4,
+        "title": "Куриные ножки",
+        "detail": "Куриные ножки, панированные в сухарях, обжаренные во фритюре",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/126ce24f4b194e736599a7b30d09bd58---jpg_550x342_f7e9c_convert.webp",
+        "price": 218,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "categoryId": 5,
+        "title": "Салат «Греческий»",
+        "detail": "Оливки, сливочный сыр брынза, томаты, свежие огурчики, сладкий перчик, лист салата, оливковое масло, кунжут",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/5f856cbf5f659cb6346d9f7533d6a3ea---jpg_550x342_f7e9c_convert.webp",
+        "price": 233,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "categoryId": 5,
+        "title": "Салат «Фирменный»",
+        "detail": "Картофель фри, маринованные огурчики, томаты, фирменный соус, лист салата, куриное филе, панированное в сухарях",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/7e5e893caa6a8fadcecc9147ffb823aa---jpg_550x342_f7e9c_convert.webp",
+        "price": 159,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "categoryId": 6,
+        "title": "Ланч «MINI» ",
+        "detail": "Гамбургер, картофель фри (малая порция), соус фирменный, сок 0.2л",
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/c8ddef8f7135f8454691430a6e00becb---jpg_550x342_f7e9c_convert.webp",
+        "price": 291,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "categoryId": 6,
+        "title": "Ланч «MAXI»",
+        "detail": "Чизбургер, картофель фри большая, соус фирменный, Сoca-cola 0,5л",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/720265c86c56cb0d05dd65eef68abbac---jpg_550x342_f7e9c_convert.webp",
+        "price": 365,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "categoryId": 6,
+        "title": "Мини сет",
+        "detail": "Мини Сет из легендарных бургеров. Мини Мамчикен + Мини Чизбургер Пап.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/dc1a7a732a1fbc1a0d7798a21e10eba8---jpg_550x342_f7e9c_convert.webp",
+        "price": 246,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "categoryId": 7,
+        "title": "Картофель фри",
+        "detail": "Картофель, соль",
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/c7072392de719fad25f4a363820b7bf1---png_550x342_f7e9c_convert.webp",
+        "price": 110,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "categoryId": 7,
+        "title": "Картофельные дольки от Папы",
+        "detail": "Картофель, соль.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/27/da7fe2885913953fe4ad8cee2e96a9eb---jpg_550x342_f7e9c_convert.webp",
+        "price": 110,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "categoryId": 8,
+        "title": "Без соуса",
+        "detail": null,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/04d2913ea263586c8509e46b847afeea---jpg_550x342_f7e9c_convert.webp",
+        "price": 0,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "categoryId": 8,
+        "title": "Томатный кетчуп",
+        "detail": null,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/601e403d7e68b5ad04e69dce1417531c---jpg_550x342_f7e9c_convert.webp",
+        "price": 26,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "categoryId": 9,
+        "title": "Чай",
+        "detail": null,
+        "img": "https://cdn.foodpicasso.com/assets/2022/05/22/dce97db8faaf1f29e9c98232ba3003b2---jpg_550x342_f7e9c_convert.webp",
+        "price": 40,
+        "ingeridents": [
+            {
+                "id": 1,
+                "selected": true
+            },
+            {
+                "id": 2,
+                "selected": false
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "categoryId": 9,
+        "title": "Милкшейк",
+        "detail": null,
+        "img": "https://cdn.foodpicasso.com/assets/2022/07/26/bdc4a687218cc5ba2746e01b4a5ea529---jpg_550x342_f7e9c_convert.webp",
+        "price": 130,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "categoryId": 9,
+        "title": "Сок Добрый 0,33 ",
+        "detail": "В ассортименте.",
+        "img": "https://cdn.foodpicasso.com/assets/2022/08/12/9db1e68f8dd5a60122b41c298e1379d1---jpg_550x342_f7e9c_convert.webp",
+        "price": 82,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "categoryId": 9,
+        "title": "Морс в ассортименте",
+        "detail": null,
+        "img": "https://cdn.foodpicasso.com/assets/2022/08/25/b12e809614d17fe75dfc5ebbe435b683---jpg_550x342_f7e9c_convert.webp",
+        "price": 59,
+        "ingeridents": [
+            {
+                "id": null,
+                "selected": null
             }
         ]
     }
