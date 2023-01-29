@@ -132,13 +132,10 @@ export default {
     font-size: 32px;
     font-weight: bolder;
     color: white;
-    /* margin: auto; */
     align-items: center;
-    /* margin: 15px 0 0 380px; */
     width: 45px;
     height: 45px;
     text-align: center;
-
 }
 
 .open-modal-btn:hover {
