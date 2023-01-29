@@ -7,10 +7,6 @@
             <span class="ingerident-in-cart" v-for="ingerident in orderIngredientCounts()" v-bind:key="ingerident.id">
                 {{ ingerident.name }} ({{ ingerident.count }} )
             </span>
-            <!-- <span class="ingerident-in-cart" v-for="ingerident in order.ingeridents" :key="ingerident.ingerident.id">
-                {{
-                    ingerident.ingerident.name
-                }}</span> -->
         </div>
         <CounterItem :startValue="order.productCount" @onCounterChanged="cartCountChanged" />
         <span> {{
@@ -79,7 +75,6 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* height: auto; */
     margin: auto;
 }
 
