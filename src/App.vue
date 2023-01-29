@@ -1,11 +1,10 @@
 <template>
   <div class="container">
-    <NavbarItem v-bind:categories="categories" />
-    <!-- <router-view /> -->
+    <NavbarItem :categories="categories" @filteredData="updateFilteredProducts" />
     <SubHeader />
     <TabsItem />
     <div class="main-container">
-      <MenuCards v-for="category in categories" :key="category.id" :category="category" />
+      <MenuCards v-for="category in filteredProducts" :key="category.id" :category="category" />
       <CartItem />
     </div>
   </div>
@@ -32,12 +31,19 @@ export default {
   },
   data() {
     return {
-      categories: []
+      categories: [],
+      filteredProducts: []
     }
   },
+
   mounted() {
     this.categories = categoryService.list()
-
+    this.filteredProducts = this.categories
+  }
+  , methods: {
+    updateFilteredProducts(filteredProducts) {
+      this.filteredProducts = filteredProducts;
+    }
   }
 }
 </script>
@@ -50,7 +56,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100%;
-  overflow-x: hidden;
+  /*  overflow-x: auto; */
+  padding-top: 0px;
+  margin-top: 0px;
+  overflow-x: scroll;
   /* min-height: 100%;
   min-height: var(--doc-height);
 
@@ -59,8 +68,8 @@ export default {
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
   #app {
-    overflow: scroll;
-    margin: 0;
+    width: 100%;
+    overflow: auto;
   }
 }
 
