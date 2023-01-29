@@ -19,75 +19,71 @@
                         </div>
                     </template>
                     <v-card right width="300px">
-                        <v-card-text>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua.
+                        <v-card-text class="working-hours-days">
+                            <ol>Время работы
+                                <li>Пн
+                                    09:00 − 23:30</li>
+                                <li>Вт
+                                    09:00 − 23:30</li>
+                                <li>Ср
+                                    09:00 − 23:30</li>
+                                <li>Чт
+                                    09:00 − 23:30</li>
+                                <li>Пт
+                                    09:00 − 23:30</li>
+                                <li>Сб
+                                    09:00 − 23:30</li>
+                                <li>Вс
+                                    09:00 − 23:30</li>
+                            </ol>
                         </v-card-text>
                         <v-card-actions>
-                            <v-btn class="close-btn" color="primary" block @click="dialog = false">Close Dialog</v-btn>
+                            <button class="close-btn" block @click="dialog = false">X</button>
                         </v-card-actions>
                     </v-card>
                 </v-dialog>
-                <v-dialog class="modal-cart" v-model="dialog">
+                <v-dialog class="modal-cart" v-model="dialog2">
                     <template v-slot:activator="{ props }">
                         <div class="working-hours">
-
                             <a v-bind="props"> 399399</a>
                         </div>
                     </template>
                     <v-card right width="300px">
                         <v-card-text>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua.
+                            <h4>Заказать доставку</h4>
+                            <p>399399</p>
                         </v-card-text>
                         <v-card-actions>
-                            <v-btn class="close-btn" color="primary" block @click="dialog = false">Close Dialog</v-btn>
+                            <button class="close-btn" block @click="dialog2 = false">X</button>
                         </v-card-actions>
                     </v-card>
                 </v-dialog>
-                <v-dialog class="modal-cart" v-model="dialog">
-                    <template v-slot:activator="{ props }">
-                        <div class="working-hours">
+                <div :style="{ display: flex, flexDirection: column }">
+                    <v-dialog class="modal-cart" v-model="dialog3">
+                        <template v-slot:activator="{ props }">
+                            <div class="working-hours">
+                                <a v-bind="props">Адреса и зоны доставки</a>
+                            </div>
+                        </template>
+                        <v-card right width="500px">
+                            <v-card-text>
+                                <h4>Адреса и зоны доставки</h4>
+                            </v-card-text>
+                            <v-card-actions>
+                                <button class="close-btn" block @click="dialog3 = false">X</button>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </div>
 
-                            <a v-bind="props">Адреса и зоны доставки</a>
-                        </div>
-                    </template>
-                    <v-card right width="300px">
-                        <v-card-text>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua.
-                        </v-card-text>
-                        <v-card-actions>
-                            <v-btn class="close-btn" color="primary" block @click="dialog = false">Close Dialog</v-btn>
-                        </v-card-actions>
-                    </v-card>
-                </v-dialog>
+                <div class="working-hours">
+                    <a href="#">Отзывы</a>
+                </div>
             </div>
-            <v-dialog class="modal-cart" v-model="dialog">
-                <template v-slot:activator="{ props }">
-                    <div class="working-hours">
-
-                        <a v-bind="props">Отзывы</a>
-                    </div>
-                </template>
-                <v-card right width="300px">
-                    <v-card-text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.
-                    </v-card-text>
-                    <v-card-actions>
-                        <v-btn class="close-btn" color="primary" block @click="dialog = false">Close Dialog</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-dialog>
-
-
         </div>
-        <input class="input-item" v-model="search" />
+        <div>
+            <input class="input-item" v-model="search" />
+        </div>
         <div class="d-flex justify-space-around">
             <p>Войти</p>
             <span>🔒</span>
@@ -117,19 +113,38 @@ export default {
         return {
             search: '',
             dialog: false,
+            dialog2: false,
+            dialog3: false,
+            dialog4: false,
+
             // categories: []
         }
     },
+    // computed: {
+    //     filteredCategories() {
+    //         return Object.values(this.categories).filter(category => {
+    //             return category.name.toLowerCase().includes(this.search.toLowerCase());
+    //         });
+    //     }
+    // }
+    // ,
     computed: {
         filteredProducts() {
             return this.categories.filter(category => {
-                console.log("search", this.search);
                 return category.name.toLowerCase().includes(this.search.toLowerCase());
-
             });
         }
+    },
+    methods: {
+        emitFilteredData() {
+            this.$emit('filteredData', this.filteredProducts)
+        }
+    },
+    watch: {
+        search() {
+            this.emitFilteredData()
+        }
     }
-    // ,
 
     // mounted() {
     //     this.categories = categoryService.list()
@@ -179,11 +194,20 @@ export default {
     width: 120px;
 }
 
-/* .close-btn {
+.close-btn {
     position: absolute;
     float: right;
-    right: 5px;
-} */
+    top: 8px;
+    right: 8px;
+}
+
+.working-hours-days {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 /* .nav-container {
     border: none;
