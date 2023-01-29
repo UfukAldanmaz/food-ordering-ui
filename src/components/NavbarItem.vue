@@ -1,14 +1,6 @@
 <template>
     <div class="header-container">
-
-        <div>
-            <router-link to="/" class="left"><img
-                    src="https://app.foodpicasso.com/source/photos/2022/05/24/296bce6aeef5fddb6b8afcf553e999c8.png" /></router-link>
-            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="/about">About</router-link></li>
-            </ul> -->
-        </div>
+        <img src="https://app.foodpicasso.com/source/photos/2022/05/24/296bce6aeef5fddb6b8afcf553e999c8.png" />
         <div class="text-center  header-text-col">
             <div class="header-text-row">
                 <v-dialog class="modal-cart" v-model="dialog">
@@ -88,7 +80,6 @@
             <p>Войти</p>
             <span>🔒</span>
             <v-icon icon="fa:fas fa-lock"></v-icon>
-
         </div>
     </div>
 </template>
@@ -96,7 +87,6 @@
 <script>
 import { aliases, fa } from 'vuetify/iconsets/fa'
 import '@fortawesome/fontawesome-free/css/all.css'
-// import * as categoryService from '../services/categoryService';
 
 export default {
     icons: {
@@ -116,18 +106,8 @@ export default {
             dialog2: false,
             dialog3: false,
             dialog4: false,
-
-            // categories: []
         }
     },
-    // computed: {
-    //     filteredCategories() {
-    //         return Object.values(this.categories).filter(category => {
-    //             return category.name.toLowerCase().includes(this.search.toLowerCase());
-    //         });
-    //     }
-    // }
-    // ,
     computed: {
         filteredProducts() {
             return this.categories.filter(category => {
@@ -145,10 +125,6 @@ export default {
             this.emitFilteredData()
         }
     }
-
-    // mounted() {
-    //     this.categories = categoryService.list()
-    // }
 }
 </script>
 
@@ -172,7 +148,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
 }
 
 .header-text-row {
@@ -208,11 +183,4 @@ export default {
     justify-content: center;
     align-items: center;
 }
-
-/* .nav-container {
-    border: none;
-    background-color: white;
-    box-shadow: none;
-    margin-bottom: 80px;
-} */
 </style>
