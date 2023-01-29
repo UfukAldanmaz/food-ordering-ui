@@ -24,12 +24,6 @@ export default {
 }    
 </script>
 <style scoped>
-/* .fixed-tabs-bar .v-tabs__bar {
-    position: sticky;
-    top: 4rem;
-    z-index: 2;
-} */
-
 .tab-container {
     margin-bottom: 50px;
 }
