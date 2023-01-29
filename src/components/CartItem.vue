@@ -22,8 +22,6 @@
 <script>
 import OrderItem from './OrderItem.vue';
 
-
-
 export default {
   components: {
     OrderItem
@@ -37,7 +35,6 @@ export default {
   },
   methods: {
     emptyCart: function () {
-      console.log('str');
       this.$store.dispatch('cart/emptyCart')
     }
   }
@@ -61,7 +58,6 @@ export default {
 
 }
 
-
 .cart-header-container {
   display: flex;
   flex-direction: column;
@@ -77,24 +73,7 @@ export default {
   gap: 30px;
 }
 
-/* .cart-sticky {
-  position: sticky;
-  height: 500px;
-  background-color: rgb(216, 215, 215);
-  top: 520px;
-  right: 50px;
-  overflow-x: hidden;
-  padding-top: 20px;
-  border-radius: 8px;
-  float: right;
-  width: 21%;
-} */
-
 .cart {
-  /* width: 200px; */
-  /* position: fixed; */
-  /* 
-  width: 160px; */
   align-items: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -102,16 +81,10 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-
-  /* z-index: 1; */
   height: auto;
   top: 620px;
-  /* bottom: auto; */
   right: 50px;
-  /* overflow-x: hidden; */
-  /* padding-top: 20px; */
   border-radius: 8px;
-  /* margin-top: 6px; */
   height: 100%;
   max-height: 200%;
   background-color: rgb(246, 241, 241);
