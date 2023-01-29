@@ -1,17 +1,18 @@
 <template>
   <div class="container">
-    <NavbarItem />
+    <NavbarItem v-bind:categories="categories" />
     <!-- <router-view /> -->
     <SubHeader />
     <TabsItem />
     <div class="main-container">
-      <MenuCards />
+      <MenuCards v-for="category in categories" :key="category.id" :category="category" />
       <CartItem />
     </div>
   </div>
 </template>
 
 <script>
+import * as categoryService from './services/categoryService';
 import NavbarItem from './components/NavbarItem.vue';
 import MenuCards from './components/MenuCards.vue';
 import SubHeader from './components/SubHeader.vue'
@@ -29,6 +30,15 @@ export default {
     SubHeader,
     CartItem
   },
+  data() {
+    return {
+      categories: []
+    }
+  },
+  mounted() {
+    this.categories = categoryService.list()
+
+  }
 }
 </script>
 
