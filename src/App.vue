@@ -56,14 +56,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100%;
-  /*  overflow-x: auto; */
   padding-top: 0px;
   margin-top: 0px;
   overflow-x: scroll;
-  /* min-height: 100%;
-  min-height: var(--doc-height);
-
-  width: 100%; */
 }
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
@@ -79,19 +74,11 @@ export default {
   justify-content: center;
   margin: 50px 80px auto;
   white-space: nowrap;
-  /* overflow-x: auto; */
   width: 100%;
-
 }
 
 .main-container {
   display: inline-block;
   width: 100%;
-}
-
-* {
-  /* background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important; */
 }
 </style>
