@@ -69,7 +69,6 @@ export default {
     justify-content: center;
     align-items: center;
     margin-left: 400px;
-    /* position: absolute; */
 }
 
 .close-btn {
