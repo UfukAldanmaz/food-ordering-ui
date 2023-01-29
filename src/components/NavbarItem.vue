@@ -87,11 +87,7 @@
 
 
         </div>
-        <input class="input-item" />
-        <!-- <div id="test1" class="col s12">Test 1</div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div> -->
+        <input class="input-item" v-model="search" />
         <div class="d-flex justify-space-around">
             <p>Войти</p>
             <span>🔒</span>
@@ -104,6 +100,8 @@
 <script>
 import { aliases, fa } from 'vuetify/iconsets/fa'
 import '@fortawesome/fontawesome-free/css/all.css'
+// import * as categoryService from '../services/categoryService';
+
 export default {
     icons: {
         defaultSet: 'fa',
@@ -112,11 +110,30 @@ export default {
             fa,
         }
     },
+    props: {
+        categories: Object
+    },
     data() {
         return {
+            search: '',
             dialog: false,
+            // categories: []
         }
     },
+    computed: {
+        filteredProducts() {
+            return this.categories.filter(category => {
+                console.log("search", this.search);
+                return category.name.toLowerCase().includes(this.search.toLowerCase());
+
+            });
+        }
+    }
+    // ,
+
+    // mounted() {
+    //     this.categories = categoryService.list()
+    // }
 }
 </script>
 
