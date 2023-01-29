@@ -3,19 +3,19 @@
         <div class="cart-order-title">
             <span>
                 {{ order.product.title }}
-
             </span>
-            <span class="ingerident-in-cart" v-for="ingerident in order.ingeridents" :key="ingerident.ingerident.id">
+            <span class="ingerident-in-cart" v-for="ingerident in orderIngredientCounts()" v-bind:key="ingerident.id">
+                {{ ingerident.name }} ({{ ingerident.count }} )
+            </span>
+            <!-- <span class="ingerident-in-cart" v-for="ingerident in order.ingeridents" :key="ingerident.ingerident.id">
                 {{
-                    ingerident.ingerident.count > 0 ? ingerident.ingerident.count :
-                        ingerident.ingerident.name
-                }}</span>
+                    ingerident.ingerident.name
+                }}</span> -->
         </div>
         <CounterItem :startValue="order.productCount" @onCounterChanged="cartCountChanged" />
         <span> {{
             calculatePrice()
         }}</span>
-        <!-- <p>Price prop</p> -->
     </div>
 </template>
 
@@ -26,50 +26,47 @@ export default {
     props: {
         order: Object
     },
-    components: { CounterItem },
+    components: {
+        CounterItem
+    },
     methods: {
         calculatePrice: function () {
             let result = this.order.productCount * this.order.product.price;
             for (let i = 0; i < this.order.ingeridents.length; i++) {
                 const ingerident = this.order.ingeridents[i];
-                result += ingerident.ingerident.price * ingerident.count;
+                result += ingerident.ingerident.price * ingerident.count * this.order.productCount;
             }
             return result;
         },
-        //     cartCountChange: function () {
-        //   console.log('str');
-        //   this.$store.dispatch('cart/emptyCart')
-        // }
-        cartCountChanged(count, action) {
-            // if (action == 'add') {
-            //     this.productCount = this.order.price + 1
-            //     this.$emit("updateCartItem", this.order.price);
-            // } else {
-            //     if (this.order.productCount > 1) {
-            //         this.productCount = this.order.productCount - 1;
-            //         this.$emit("updateCartItem", this.order.product);
-            //     }
-            //     else {
-
-            //         this.$emit("removeCartItem", this.order.product)
-
-            //     }
+        cartCountChanged(count) {
             if (count === 0) {
                 this.$store.dispatch('cart/removeOrder', this.order)
-            }
-            else if (action == 'add') {
+            } else if (count > this.order.productCount) {
                 this.$store.dispatch('cart/increaseOrder', this.order)
             }
+            else {
+                this.$store.dispatch('cart/decreaseOrder', this.order)
+            }
+        },
 
-        }
+        orderIngredientCounts() {
+            const ingeridents = this.order.ingeridents;
+            let ingredientCounts = [];
+            ingeridents.forEach(ingerident => {
+                let existingIngredient = ingredientCounts.find(countedIngredient => countedIngredient.id === ingerident.ingerident.id);
+                if (existingIngredient) {
+                    existingIngredient.count++;
+                } else {
+                    ingredientCounts.push({
+                        id: ingerident.ingerident.id,
+                        name: ingerident.ingerident.name,
+                        count: 1
+                    });
+                }
+            });
 
-        // this.order.productCount = count;
-        // if (this.order.productCount === 0) {
-        //     console.log("count", this.order.productCount);
-        //     this.$emit("productRemoved", this.product);
-        // } else {
-        //     this.$emit("productIncreased", this.product, this.order.price);
-        // }
+            return ingredientCounts;
+        },
     },
 }
 
