@@ -12,19 +12,27 @@
 
 <script>
 export default {
+  props: {
+    startValue: Number,
+    minValue: Number
+  },
   data() {
     return {
-      counter: 0
+      counter: this.startValue ?? 0
     };
   },
   methods: {
     incrementCounter() {
       this.counter++;
+      this.$emit('onCounterChanged', this.counter)
     },
     decrementCounter() {
-      if (this.counter === 0)
+      if (this.counter === this.minValue) {
+        this.$emit('onCounterChanged', this.minValue)
         return;
+      }
       this.counter -= 1;
+      this.$emit('onCounterChanged', this.counter)
     }
   }
 };
