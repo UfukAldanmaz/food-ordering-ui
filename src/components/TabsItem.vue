@@ -1,23 +1,35 @@
 <template>
     <div class="tab-container">
-        <v-tabs fixed-tabs background-color="white" dark>
-            <v-tab>
-                Option
-            </v-tab>
-            <v-tab>
-                Another Selection
-            </v-tab>
-            <v-tab>
-                Items
-            </v-tab>
-            <v-tab>
-                Another Screen
+        <v-tabs background-color="white" dark>
+            <v-tab v-for="category in categories" :key="category.id">
+                <a :href="'#' + category.id"> {{ category.name }}</a>
             </v-tab>
         </v-tabs>
     </div>
 </template>
+<script>
+import * as categoryService from '../services/categoryService';
 
-<style>
+export default {
+    name: "TabsItem",
+    data() {
+        return {
+            categories: []
+        }
+    },
+    mounted() {
+        this.categories = categoryService.list()
+
+    }
+}    
+</script>
+<style scoped>
+/* .fixed-tabs-bar .v-tabs__bar {
+    position: sticky;
+    top: 4rem;
+    z-index: 2;
+} */
+
 .tab-container {
     margin-bottom: 50px;
 }
