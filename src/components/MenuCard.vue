@@ -1,7 +1,5 @@
 <template>
     <div class="col s12 m6">
-
-
         <div class="card ">
             <div class="card-image">
                 <img :key="menuItem.id" :src=menuItem.img>
@@ -14,10 +12,6 @@
                     <span class="menu-price">{{ menuItem.price }} ₽</span>
                     <MenuModal :menuItem="menuItem" />
                 </div>
-
-                <!-- <a class="btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">+</i></a> -->
-                <!-- // v-model="showMenuModal" -->
-
             </div>
         </div>
     </div>
@@ -54,16 +48,4 @@ export default {
     font-weight: bolder;
     font-size: 20px;
 }
-
-/* .menu-detail-text {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    white-space: pre-wrap;
-}
-
-.card-item {
-    overflow: hidden;
-} */
 </style>
