@@ -8,7 +8,7 @@
             </template>
 
             <v-card>
-                <v-btn color="none" block @click="dialog = false">X</v-btn>
+                <button class="close-btn" @click="dialog = false">X</button>
 
                 <img :key="menuItem.id" :src=menuItem.img>
 
@@ -20,7 +20,6 @@
 
                     <IngeridentList v-for="[key, value] in groupedIngeridents" :key="key" :ingeridents="value"
                         @ingeridentsChanged="ingeridentsChanged" />
-
 
                 </v-card-text>
                 <v-card-actions>
@@ -78,7 +77,9 @@ export default {
             this.productCount = count;
         },
         getSelection() {
+            const orderId = this.$store.getters['cart/getMaxOrderId'] + 1;
             return {
+                orderId,
                 product: this.menuItem,
                 productCount: this.productCount,
                 ingeridents: this.selectedIngeridents,
@@ -95,14 +96,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .add-to-cart {
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    gap: 12px;
+    padding: 10px;
+    gap: 55px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .add-to-cart-btn {
@@ -116,7 +123,7 @@ export default {
 .counter-item-add {
     background-color: white;
     color: black;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .open-modal-btn {
@@ -127,7 +134,7 @@ export default {
     color: white;
     /* margin: auto; */
     align-items: center;
-    margin: 15px 0 0 380px;
+    /* margin: 15px 0 0 380px; */
     width: 45px;
     height: 45px;
     text-align: center;
@@ -136,5 +143,25 @@ export default {
 
 .open-modal-btn:hover {
     background-color: #58ad85;
+}
+
+.close-btn {
+    width: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    position: absolute;
+    float: right;
+    top: 8px;
+    right: 10px;
+}
+
+.close-btn:hover {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.close-btn:active {
+    background-color: none;
+
 }
 </style>
